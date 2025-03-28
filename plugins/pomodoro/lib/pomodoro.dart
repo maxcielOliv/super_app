@@ -61,9 +61,12 @@ class _PomodoroScreenState extends State<PomodoroScreen> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Text(
-              '$timeInMinute:${(timeInSec % 60).toString().padLeft(2, '0')}',
-              style: TextStyle(fontSize: 30),
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Text(
+                '$timeInMinute:${(timeInSec % 60).toString().padLeft(2, '0')}',
+                style: TextStyle(fontSize: 30),
+              ),
             ),
             Row(
               mainAxisAlignment: MainAxisAlignment.center,

@@ -1,10 +1,9 @@
+import 'package:commons/commons.dart';
 import 'package:flutter/material.dart';
+import 'package:notes/notes_screen.dart';
 import 'package:pomodoro/pomodoro.dart';
-import 'package:provider/provider.dart';
-import 'package:super_app/home_page.dart';
-import 'package:super_app/ui/screen/notes_screen.dart';
-import 'package:super_app/data/provider/focus_hub_provider.dart';
-import 'package:super_app/ui/screen/task_screen.dart';
+import 'package:tasks/task_screen.dart';
+import 'package:super_app/ui/screen/home_page.dart';
 
 class App extends StatelessWidget {
   const App({super.key});
