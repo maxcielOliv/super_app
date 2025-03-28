@@ -3,6 +3,7 @@ import 'package:commons/provider/focus_hub_provider.dart';
 import 'package:flutter/material.dart';
 import 'package:notes/widget/add_note.dart';
 import 'package:notes/widget/note_options.dart';
+import 'package:notes/widget/options.dart';
 
 class NotesScreen extends StatefulWidget {
   const NotesScreen({super.key});
@@ -19,7 +20,7 @@ class _NotesScreenState extends State<NotesScreen> {
     return Scaffold(
       appBar: AppBar(title: Text('Bloco de Notas')),
       body: Column(
-        mainAxisAlignment: MainAxisAlignment.spaceAround,
+        //mainAxisAlignment: MainAxisAlignment.spaceAround,
         children: [
           Expanded(
             child: ListView.builder(
@@ -27,7 +28,7 @@ class _NotesScreenState extends State<NotesScreen> {
               itemBuilder:
                   (context, index) => ListTile(
                     title: Text(notas[index]),
-                    trailing: NoteOptions(
+                    trailing: Options(
                       notas: notas,
                       index: index,
                     ),
