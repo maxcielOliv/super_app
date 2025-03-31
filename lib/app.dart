@@ -12,12 +12,10 @@ class App extends StatelessWidget {
   Widget build(BuildContext context) {
     return MultiProvider(
       providers: [
-        ChangeNotifierProvider(
-        create: (_) => FocusHubProvider(),
-      ),
+        ChangeNotifierProvider(create: (_) => TaskRepository()),
+        ChangeNotifierProvider(create: (_) => FocusHubProvider()),
       ],
       child: MaterialApp(
-        title: 'Flutter Demo',
         theme: ThemeData.light(),
         home: HomePage(),
         routes: {
